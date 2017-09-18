@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="itemStocksApp">
+<head>
+<meta charset="ISO-8859-1">
+<title>Sales Order</title>
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/angular.min.js"></script>
+<link rel="stylesheet" href="../supplier/css/listItems.css">
+<script>
+
+
+angular.module("itemStocksApp", []);
+	
+</script>
+<script src="../supplier/js/SupplierStockItemsCtrl.js"></script>
+
+
+
+
+
+</head>
+
+<body ng-controller="SupplierStockItemsCtrl">
+
+
+
+
+
+	<div id="wrapper"
+		style="width: 400px; height: 600px; margin-top: 150px; margin-left: 600px; margin-right: 200px; border: 1px solid black;">
+
+
+		<div class="header_image clearfix">
+			<!--	<img src="../img/lessthan.jpg" /> -->
+			<h2>
+			{{itemlistName}}
+			</h2>
+		</div> 
+		<h4>Select Pork Stock</h4>
+
+		<div class="bar">
+			<!-- Create a binding between the searchString model and the text field -->
+			<input type="text" ng-model="searchString"
+				placeholder="Search Inventory" />
+		</div>
+		<ul>
+			<li ng-repeat="i in items | filter:{name:searchString} "><b
+				style="align: left;">{{i.name}}</b><b
+				style="float: right; color: rgb(66, 133, 244);"><a href="#">{{i.units}}</a></b></li>
+		</ul>
+	</div>
+
+</body>
+</html>

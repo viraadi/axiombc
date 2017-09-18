@@ -1,0 +1,105 @@
+<style>
+
+* {
+            font-family: 'Roboto', sans-serif;
+        }
+		
+		 h4 {
+            border-bottom: 1px solid #ece9e9;
+            margin: 0;
+            padding: 15px 0;
+			color: rgb(66, 133, 244);
+            background: #f4f4f4;
+        }
+        
+        h2 {
+            border-bottom: 1px solid #ece9e9;
+            margin: 0;
+            padding: 15px 0;
+            background: #0B2161;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .icon-zoom-in {
+            position: relative;
+            left: 30px;
+            top: 0px;
+            z-index: 999;
+            vertical-align: middle;
+        }
+        
+        .input-append {
+            margin-left: -20px;
+            border-bottom: 1px solid #ece9e9;
+            padding: 10px 0;
+        }
+        
+        .input-append input {
+            height: 40px;
+            padding-left: 30px;
+            font-size: 16px;
+            width: 88%;
+        }
+        
+        .search {
+            border-radius: 4px;
+            background: #f4f4f4;
+            border: 0;
+        }
+        
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+        
+        li {
+            padding: 10px;
+            list-style: none;
+            <!--color: rgb(66, 133, 244);-->
+            font-size: 14px;
+            border-bottom: 1px solid #ece9e9;
+        }
+		
+		.header img {
+		  float: left;
+		  width: 20px;
+		  height: 20px;
+		}
+
+		.header h4 {
+		  position: relative;
+		  top: -5px;
+		  left: 0px;
+		}
+		
+		.header_image {
+			  position: relative;
+			}
+			.header_image img {
+			  max-width: 15%;
+			  float: left;
+			  margin-top:8px;
+			}
+			.header_image h2 {
+			  vertical-align: middle;
+			}
+
+			.clearfix:before,
+			.clearfix:after {
+			  display: table;
+			  content: " ";
+			}
+			
+			li.selectedclass
+				{
+				  color:red;
+				  background-color:blue;
+				}
+		
+		<!--li a:hover {
+			background-color: #FFFFFF;
+		}-->
+
+        
+	</style>
